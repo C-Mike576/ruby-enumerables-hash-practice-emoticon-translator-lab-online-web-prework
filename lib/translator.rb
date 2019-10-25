@@ -20,7 +20,9 @@ end
 
 def get_japanese_emoticon(file, emoticon)
   # code goes here
-  if load_library(file)["get_emoticon"].has_key?(emoticon)
+  emoticon_list = load_library(file)
+  if emoticon_list["get_emoticon"].has_key?(emoticon)
+    binding.pry
     return load_library(file)[get_emoticon][emoticon]
   else
     puts "#{emoticon} not found"
