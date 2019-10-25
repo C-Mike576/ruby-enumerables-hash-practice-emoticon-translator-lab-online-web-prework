@@ -6,8 +6,8 @@ def load_library(file)
   # code goes here
   emotes_list = YAML.load_file(file)
   emotes = Hash.new do |k,v|
-    get_meaning[k][v] = {}
-    get_emoticon[k][v] = {}
+    k[v] =  {}
+    k[v] = {}
   end
   binding.pry
   emotes_list.each_value do |values|
