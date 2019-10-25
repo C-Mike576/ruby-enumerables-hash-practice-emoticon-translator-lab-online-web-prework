@@ -5,15 +5,14 @@ require 'pry'
 def load_library(file)
   # code goes here
   emotes_list = YAML.load_file(file)
-  #emotes = Hash.new do |k,v|
- #   k[v] =  {}
-  #  k[v] = {}
+  emotes = {"get_meaning" => {}, "get_emoticon" => {}}
   #end
-  #binding.pry
+  binding.pry
  # emotes_list.each_value do |values|
    # emotes[get_meaning][values[0]] = values[1]
   #  emotes[get_emoticon][values[1]] = values[0]
   #end
+  
   emotes_list
 end
 
