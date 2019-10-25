@@ -1,6 +1,6 @@
 # require modules here
 require "yaml"
-
+require 'pry'
 
 def load_library(file)
   # code goes here
@@ -9,11 +9,12 @@ def load_library(file)
     get_meaning[k][v] = {}
     get_emoticon[k][v] = {}
   end
+  binding.pry
   emotes_list.each_value do |values|
     emotes[get_meaning][values[0]] = values[1]
     emotes[get_emoticon][values[1]] = values[0]
   end
-  p emotes_list
+  
 end
 
 def get_japanese_emoticon
