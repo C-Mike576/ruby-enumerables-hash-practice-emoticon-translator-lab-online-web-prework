@@ -24,7 +24,7 @@ def get_japanese_emoticon(file, emoticon)
   if emoticon_list["get_emoticon"].has_key?(emoticon)
     p emoticon_list["get_emoticon"][emoticon]
   else
-    p 
+    p "Sorry, that emoticon was not found"
   end
 end
 
