@@ -13,7 +13,7 @@ def load_library(file)
     emotes[get_meaning][values[0]] = values[1]
     emotes[get_emoticon][values[1]] = values[0]
   end
-  p emotes
+  p emotes_list
 end
 
 def get_japanese_emoticon
