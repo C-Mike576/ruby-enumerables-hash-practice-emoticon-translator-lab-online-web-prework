@@ -8,8 +8,9 @@ def load_library(file)
   emotes = {"get_meaning" => {}, "get_emoticon" => {}}
   #end
   
- emotes_list.each_value do |values|
-   #binding.pry
+ emotes_list.each_pair do |meaning, values|
+   
+   binding.pry
     emotes["get_meaning"][values[1]] = values[0]
     emotes["get_emoticon"][values[0]] = values[1]
   end
