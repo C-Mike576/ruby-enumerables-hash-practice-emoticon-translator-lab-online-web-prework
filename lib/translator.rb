@@ -9,7 +9,7 @@ def load_library(file)
   #end
   
  emotes_list.each_value do |values|
-   binding.pry
+   #binding.pry
     emotes["get_meaning"][values[0]] = values[1]
     emotes["get_emoticon"][values[1]] = values[0]
   end
