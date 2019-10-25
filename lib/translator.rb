@@ -10,11 +10,11 @@ def load_library(file)
   
  emotes_list.each_pair do |meaning, values|
    
-   binding.pry
+   #binding.pry
     emotes["get_meaning"][values[1]] = meaning
     emotes["get_emoticon"][values[0]] = values[1]
   end
-  #binding.pry
+  binding.pry
   emotes
 end
 
