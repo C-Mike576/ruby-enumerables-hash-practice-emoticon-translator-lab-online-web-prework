@@ -20,10 +20,11 @@ end
 
 def get_japanese_emoticon(file, emoticon)
   # code goes here
-  new_emote = load_library(file).fetch
-  
-
-
+  if load_library(file)["get_emoticon"].has_key?(emoticon)
+    return load_library(file)[get_emoticon][emoticon]
+  else
+    puts "#{emoticon} not found"
+  end
 end
 
 def get_english_meaning
