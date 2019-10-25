@@ -14,7 +14,7 @@ def load_library(file)
     emotes["get_meaning"][values[1]] = meaning
     emotes["get_emoticon"][values[0]] = values[1]
   end
-  binding.pry
+  #binding.pry
   emotes
 end
 
