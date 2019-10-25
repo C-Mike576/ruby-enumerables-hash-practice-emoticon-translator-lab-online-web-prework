@@ -18,8 +18,12 @@ def load_library(file)
   emotes
 end
 
-def get_japanese_emoticon
+def get_japanese_emoticon(file, emoticon)
   # code goes here
+  new_emote = load_library(file).fetch
+  
+
+
 end
 
 def get_english_meaning
